@@ -16,12 +16,11 @@
 #
 
 #
-# System Properties for Realme 1: CPH1859
+# System Properties for realme 1: CPH1859
 #
 
 # LCD density
 ro.sf.lcd_density=480
-
 
 # Cam2Api
 persist.camera.HAL3.enabled=1
@@ -55,6 +54,13 @@ drm.service.enabled=true
 
 # OMX
 mtk.vdec.waitkeyframeforplay=1
+
+# PixelPlusUI
+ro.ppui.device_name=realme 1
+ro.ppui.version=3.5
+ro.ppui.version_code=Jasper
+ro.ppui.is_official=true
+ro.ppui.maintainer_name=Debayan Kar
 
 # Power off opt in IPO
 sys.ipo.pwrdncap=2

@@ -19,8 +19,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common StagOS stuff.
-$(call inherit-product, vendor/stag/main.mk)
+# Inherit some common PixelPlusUI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from oppo CPH1859
 $(call inherit-product, device/oppo/CPH1859/device.mk)
@@ -33,7 +33,15 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := stag_CPH1859
+# PixelPlusUI Official
+TARGET_FACE_UNLOCK_SUPPORTED = true
+CUSTOM_BUILD_TYPE=OFFICIAL
+
+# GApps
+TARGET_GAPPS_ARCH := arm64
+
+# Device identifier. This must come after all inclusions.
+PRODUCT_NAME := aosp_CPH1859
 PRODUCT_DEVICE := CPH1859
 PRODUCT_MANUFACTURER := oppo
 PRODUCT_BRAND := oppo
