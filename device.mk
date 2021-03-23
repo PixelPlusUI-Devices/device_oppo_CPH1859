@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/permissions/com.mediatek.ims.plugin.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.mediatek.ims.plugin.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.telephony.ims.xml
 
-
 # Misc
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/misc/factory.ini:$(TARGET_COPY_OUT_SYSTEM)/etc/factory.ini \
@@ -108,7 +107,6 @@ PRODUCT_PACKAGES += \
     RemovePackages-2 \
     RemovePackages-3
 
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.manager-V1.0-java \
@@ -128,11 +126,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     WifiOverlay
 
-
 # Tethering
 PRODUCT_PACKAGES += \
     TetheringConfigOverlay
-
 
 # KPOC
 PRODUCT_PACKAGES += \
@@ -169,12 +165,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ImsInit
 
-PRODUCT_PACKAGES += \
-    TrebleApp
-
 PRODUCT_COPY_FILES += \
        $(LOCAL_PATH)/permissions/interfaces.xml:system/etc/permissions/interfaces.xml
-
 
 # Privapp-permissions whitelist for PhhTrebleApp
 PRODUCT_COPY_FILES += \
@@ -182,4 +174,3 @@ PRODUCT_COPY_FILES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/oppo/CPH1859/CPH1859-vendor.mk)
-
