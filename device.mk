@@ -92,10 +92,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GCam
 
-# FirefoxLite
-PRODUCT_PACKAGES += \
-    FirefoxLite
-
 # QKsms
 PRODUCT_PACKAGES += \
     qksms
